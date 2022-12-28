@@ -45,6 +45,7 @@ body {
     padding:14px 20px; 
     }
 }
+
 .button:hover {
 background-color: #60a6f0;
 }
@@ -65,9 +66,13 @@ background-color: #60a6f0;
 .header_menu {
     flex: 1 1 auto;
 }
+.header_logo {
+   
+}
 .menu {
 }
 .menu_icon {
+    
 }
 
 .menu_list {
@@ -80,6 +85,7 @@ background-color: #60a6f0;
 .menu_item {
 }
 .menu_link {
+    display: block;
     color:#fff;
     font-size: 16px;
     line-height: 1.62; /* 26/16 */
@@ -119,13 +125,26 @@ opacity: 0.7;
 .icon-menu {
     display: none;
    }
+   .header_logo,
+   .header_cart,
+   .header_button {
+    position: relative;
+    z-index: 5;
+   }
    @media (max-width: 991.98px){
        .header__conteiner,
        .menu_list{
            column-gap:25px;
        }
+       .header__conteiner {
+        min-height: 90px;
+     }
    }
    @media (max-width: 767.98px){
+    .header__conteiner,
+    .menu_list{
+        column-gap:15px;
+    }
     .icon-menu {
         display: block;
         flex: 0 0 30px;
@@ -152,6 +171,56 @@ opacity: 0.7;
     .icon-menu span {
         top: calc(50% - 1px);
     }
-   }
+    .menu_body {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        left:0;
+        top:0;
+        padding: 100px 15px 30px 15px;
+        overflow: auto;
+    }
+    .menu_body::before {
+        content: "";
+        width: 100%;
+        position: fixed;
+        top:0;
+        left:0;
+        height: 70px;
+        background-color: #000;
+        z-index: 2;
+    }
+    .menu_list {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px;
+        text-align: center;  
+    }
+     .menu_link {
+        font-size: 32px;
+     }
+     .header__conteiner {
+        min-height: 70px;
+     }
+    
+    }
+     @media (max-width: 560px) {
+      .header_logo {
+       width: 32px;
+       flex: 0 0 32px;
+       overflow: hidden;
+     }
+     .cart-header_text {
+        display:none; 
+     }
+     .cart-header_quantity {
+        width: 45px;
+        height: 45px;
+        padding-top:5px;
+        background: url(../pictures/index2.png) center 0 no-repeat;
+        background-size: 100%;
+     }
+    }
    
 
