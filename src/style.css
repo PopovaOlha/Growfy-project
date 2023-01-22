@@ -40,14 +40,19 @@ body {
     line-height: 1.43; /* 22/14 */
     font-weight: 500; 
 }
+.button_dark {
+    background: rgba(129, 129, 139, 0.2);
+}
 @media (max-width:991.98px) {
     .button {
     padding:14px 20px; 
     }
 }
-
 .button:hover {
 background-color: #60a6f0;
+}
+.button_dark:hover {
+    background: rgba(211, 198, 198, 0.2);
 }
 /*--------------------------------------*/
 /* Header */
@@ -70,6 +75,9 @@ background-color: #60a6f0;
 }
 .header_menu {
     flex: 1 1 auto;
+}
+.page_main {
+
 }
 
 .menu_list {
@@ -234,5 +242,31 @@ opacity: 0.7;
         background-size: 100%;
      }
     }
-   
 
+   /*==================================================================================*/
+
+
+.main {
+    padding-top: 160px;
+}
+.main__conteiner {
+}
+.main_content {
+}
+.main_title {
+}
+.main_text {
+}
+.main_actions {
+}
+.main_button {
+}
+.button {
+}
+
+.main_images {
+}
+.images-main {
+}
+.images-main_item {
+}
