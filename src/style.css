@@ -53,6 +53,11 @@ background-color: #60a6f0;
 /* Header */
 /*--------------------------------------*/
 .header {
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(13, 13, 17, 0.522);
 }
 .header__conteiner {
     display: flex;
@@ -66,14 +71,6 @@ background-color: #60a6f0;
 .header_menu {
     flex: 1 1 auto;
 }
-.header_logo {
-   
-}
-.menu {
-}
-.menu_icon {
-    
-}
 
 .menu_list {
     display:flex;
@@ -81,8 +78,6 @@ background-color: #60a6f0;
     row-gap: 3px;
     column-gap: 35px;
     justify-content: flex-end;
-}
-.menu_item {
 }
 .menu_link {
     display: block;
@@ -95,8 +90,6 @@ background-color: #60a6f0;
 }
 .cart-header:hover .cart-header_text {
 opacity: 0.7;
-}
-.header_cart {
 }
 .cart-header {
     color:#fff;
@@ -170,7 +163,6 @@ opacity: 0.7;
         bottom:0;
     }
     .icon-menu span {
-        color: #fff;
         top: calc(50% - 2px);
     }
     .menu-open .icon-menu {
